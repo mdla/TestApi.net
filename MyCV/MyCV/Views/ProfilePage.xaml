@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCV.Views.ProfilePage">
+    <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="profile_mauro.png" Aspect="Fill" HeightRequest="270" VerticalOptions="StartAndExpand"/>
+            <!--agregar el menu flotante-->
+            <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-50,20,0" Padding="18" HeightRequest="220" VerticalOptions="StartAndExpand">
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Vertical" Spacing="6" HorizontalOptions="CenterAndExpand">
+                        <Label Text="Mauro Dario Luna Ayala" FontSize="20" FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="Desarrollador .NET" FontSize="12" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+                        
+                    </StackLayout>
+                    <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="2" HasShadow="True" CornerRadius="10" Margin="20" Padding="10" VerticalOptions="StartAndExpand">
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Objetivos" TextColor="#2C3E50"></Label>
+                    <Label Grid.Row="1" Text="Obtener experiencia y los conocimientos en las áreas de desarrollo web como también para el desarrollo mobile. Buscando un ambiente de trabajo donde pueda trabajar con las últimas tecnologías. Autodidacta, con ganas de seguir capacitandome  y aprender nuevos lenguajes.  No tengo problema en capacitarme en las tecnologías que sean necesarias para cubrir un puesto de desarrollo. Todo con el objetivo de formarme para poder cumplir un rol de Arquitecto en el futuro." FontSize="14" TextColor="#707070"/>
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
