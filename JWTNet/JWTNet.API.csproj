@@ -33,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\JWTNet.Examples\JWTNet.Examples.csproj" />
     <ProjectReference Include="..\JWTNet.Model\JWTNet.Models.csproj" />
   </ItemGroup>
 
